@@ -1,0 +1,14 @@
+site_name: Nunte's 3DS Hacking Guide
+site_url: https://3dsmanual.github.io/guide
+extra_css:
+  - style.css
+nav:
+  - Inicio: index.md
+  - Comenzando:
+    - Hackear la consola desde cero: comenzando.md
+    - Instalando Homebrew Menu: homebrew.md
+  - Herramientas:
+    - Instalar hShop: hshop.md
+    - Splash personalizado: customsplash.md
+    - Temas customizados: customthemes.md
+  - Información: info.md

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://3dsmanual.github.io/guide/comenzando/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Hackear la consola desde cero - Nunte's 3DS Hacking Guide</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <link href="../style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Nunte's 3DS Hacking Guide</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Comenzando <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Hackear la consola desde cero</a>
+</li>
+                                    
+<li>
+    <a href="../homebrew/" class="dropdown-item">Instalando Homebrew Menu</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Herramientas <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../hshop/" class="dropdown-item">Instalar hShop</a>
+</li>
+                                    
+<li>
+    <a href="../customsplash/" class="dropdown-item">Splash personalizado</a>
+</li>
+                                    
+<li>
+    <a href="../customthemes/" class="dropdown-item">Temas customizados</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../info.md" class="nav-link">Información</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../homebrew/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#como-hackear-una-3ds-desde-cero" class="nav-link">Cómo hackear una 3DS desde cero</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#1-requisitos-para-el-hack" class="nav-link">1. Requisitos para el hack</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-copiando-archivos" class="nav-link">2. Copiando archivos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-instalando-python" class="nav-link">3. Instalando Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-los-datos-del-menu-home" class="nav-link">4. Los datos del menú HOME.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#5-arreglando-el-error" class="nav-link">5. Arreglando el error</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#6-precision-absoluta" class="nav-link">6. Precisión absoluta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#7-arreglando-la-sd" class="nav-link">7. Arreglando la SD</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#8-copiando-la-nand" class="nav-link">8. Copiando la NAND.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#9-disfruta" class="nav-link">9. Disfruta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="como-hackear-una-3ds-desde-cero">Cómo hackear una 3DS desde cero</h1>
+<p>En esta guía no nos andaremos con explicaciones de que es un CFW o como funcionan los programas que usaremos.</p>
+<p>Si has venido buscando explicaciones, búsca en <a href="https://google.com">Google</a>, aquí <strong>solo</strong> explicaremos la parte práctica de las cosas.</p>
+<h2 id="1-requisitos-para-el-hack">1. Requisitos para el hack</h2>
+<p>Si tu consola es del modelo NEW, necesitarás una tarjeta Micro SD. Normalmente ya deberías tener una.</p>
+<p>Por el otro lado, si el modelo de tu consola es OLD, es decir, simplemente se llama Nintendo 3DS necesitarás una tarjeta SD o bien una micro SD con un adaptador de SD.</p>
+<p>La capacidad que yo recomiendo para las tarjetas es de 32 GB (Gigabytes).</p>
+<p>Además, necesitarás un ordenador en el que meter esa tarjeta y trabajar con ella.</p>
+<p><strong>IMPORTANTE</strong>: la tarjeta SD/MicroSD debe de haber sido utilizada por la consola al menos una vez. ¿Que qué quiero decir con esto? Que debe contener una carpeta llamada Ninendo 3DS. Esta carpeta se genera al momento de que la consola detecte la tarjeta por primera vez. Si la carpeta no existe, simplemente conecta la tarjeta a la 3DS y enciéndela. Aparecerá un mensaje que dirá que se están creando los datos del menú HOME. Cuando haya terminado, ya puedes apagar la consola y sacar la tarjeta.</p>
+<p><strong>NUNCA SAQUES LA TARJETA MIENTRAS LA CONSOLA ESTÁ ENCENDIDA. PODRÍA RESULTAR EN UNA CORRUPCIÓN DE LA MEMORIA Y HACER QUE PIERDAS TEMPORALMENTE EL ACCESO A LA 3DS HACKEADA.</strong></p>
+<h2 id="2-copiando-archivos">2. Copiando archivos</h2>
+<p>¡Comencemos a hackear!</p>
+<p>Lo primero que debemos hacer es meter nuestra tarjeta de memoria al ordenador.</p>
+<p>Allí veremos una carpeta llamada Nintendo 3DS. Copiaremos la carpeta a algún lugar temporal, como el escritorio, ya que después la volveremos a poner en la tarjeta.</p>
+<p><img alt="La carpeta que hay que copiar." src="../images/starter1_folder3DS.png" /></p>
+<p>Despues de copiar dicha carpeta, debemos borrarla de la tarjeta. Tranquilo, en el caso de tener juegos o archivos de guardado, no se borrarán, ya que más tarde recuperaremos la carpeta de nuestro escritorio.</p>
+<h2 id="3-instalando-python">3. Instalando Python</h2>
+<p>Para poder ejecutar parte de los programas del tutorial necesitarás instalar <strong>Python</strong>.</p>
+<p>Si no lo tienes instalado, puedes pulsar <a href="https://www.python.org/downloads/">aquí</a> para ir a la web de descarga.</p>
+<p><img alt="La web de descarga." src="../images/starter1_pythonweb.png" /></p>
+<p>Simplemente pulsa en descargar y abre el instalador. Cuando termine, puedes proseguir.</p>
+<h2 id="4-los-datos-del-menu-home">4. Los datos del menú HOME.</h2>
+<p>Sacaremos la tarjeta del ordenador (sin la carpeta de Nintendo 3DS) y la meteremos a la 3DS.</p>
+<p>Encenderemos la consola. Nos aparecerá esto:</p>
+<p><img alt="Datos del menú." src="../images/starter1_infohome.png" /></p>
+<p>Cuando la ventana desaparezca, entraremos en el Editor de Mii. Al entrar, tardará un poco en crear los datos, pero cuando cargue por completo, cerraremos el editor y apagaremos la consola.</p>
+<p>Meteremos la tarjeta al ordenador. Debemos abrir el archivo <a href="https://www.mediafire.com/file/kirzhlezu3k34o8/3DS+HACK+v11.17.zip/file">3DS HACK 11.17.zip</a> y colocar todos sus archivos en la raíz de la tarjeta.</p>
+<p><img alt="Copiando los archivos del hack." src="../images/starter1_foldercopyhack.png" /></p>
+<p>Cuando lo hayamos hecho, debemos ejecutar el archivo mset9.bat <strong>dentro de la tarjeta SD</strong>. Si lo hacemos fuera de la tarjeta no funcionará.</p>
+<p>Al abrirlo, nos aparecerá la siguiente ventana:</p>
+<p><img alt="La ventana emergente." src="../images/starter1_cmd1_1.png" /></p>
+<p>Debemos escoger una opción entre la 1 y la dos. La 3 y la 4 son para versiones anteriores y, por lo tanto, no deben de ser utilizadas.</p>
+<p>Pulsamos en la tecla del número correspondiente y luego pulsamos enter.</p>
+<p><img alt="Pulsa 1." src="../images/starter1_cmd1_2.png" /></p>
+<p>Nos aparecerán 4 opciones nuevas. Pulsamos el 1 y luego enter.</p>
+<p>Nos dará un error, pero es normal. Pulsaremos enter para cerrar la ventana.</p>
+<p><img alt="El error normal." src="../images/starter1_cmd1_3.png" /></p>
+<p>Sacaremos la tarjeta del ordenador y la pondremos en la consola. Ahora, la encenderemos.</p>
+<h2 id="5-arreglando-el-error">5. Arreglando el error</h2>
+<p>Cuando la consola se encienda, vamos hasta la configuración de la consola.</p>
+<p>Una vez dentro, pulsaremos en Gestión de datos &gt; Nintendo 3DS &gt; Programas.</p>
+<p>Nos avisará de que hay datos corruptos, y pulsaremos en borrar, para así arreglar el error de antes.</p>
+<p><img alt="El error de datos corruptos." src="../images/starter1_corrupteddata.png" /></p>
+<p>Cuando termine de borrar, podemos salir de la configuración y apagar la consola.</p>
+<p>Cuando la apaguemos, volveremos a meter la tarjeta al ordenador.</p>
+<p>Abriremos mset9.bat. Seleccionaremos el modelo de la consola entre 1 y 2.</p>
+<p>Entre las 4 nuevas opciones escogeremos la 1 de nuevo. No debería de darnos ningún error, como en esta imagen:</p>
+<p><img alt="El error solucionado." src="../images/starter1_cmd2_1.png" /></p>
+<p>Pulsaremos enter para cerrar la ventana y sacaremos la tarjeta del ordenador. La volveremos a meter en la 3DS.</p>
+<h2 id="6-precision-absoluta">6. Precisión absoluta</h2>
+<p>En esta parte de la guía debes hacer <strong>exactamente</strong> lo que se indique. Ni un botón más, ni uno menos.</p>
+<p>Abriremos la configuración de la consola. Iremos a Gestión de datos &gt; Nintendo 3DS &gt; Datos adicionales. Solo debería aparecer el Editor de Mii.</p>
+<p>Sin tocar nada más, sacaremos la tarjeta de la consola (<strong>estando encendida</strong>) y la pondremos en el ordenador. Si durante el proceso de sacar la tarjeta nos avisa de que no se detecta ninguna tarjeta, lo estamos haciendo bien.</p>
+<p>En el PC, ejecutaremos de nuevo mset9.bat y escogeremos el modelo de nuestra consola.</p>
+<p>Ahora, en lugar de pulsar en 1 en las 4 nuevas opciones, <strong>le daremos al 2</strong>. Cuando termine, le daremos a enter para salir.</p>
+<p>Sacaremos la tarjeta y la pondremos de nuevo en la consola.</p>
+<p>Aparecerá que está cargando y, tras unos segundos, se verá GodMode9. Esto nos permitirá instalar el hack en la 3DS.</p>
+<p><img alt="GodMode9." src="../images/starter1_godmode1.png" /></p>
+<p>Pulsaremos el botón HOME y aparecerá este menú:</p>
+<p><img alt="GodMode9 en HOME." src="../images/starter1_godmode2.png" /></p>
+<p>Le daremos a More &gt; Scripts...</p>
+<p>Veremos dos scripts. Pulsaremos en el que dice Paso 1.</p>
+<p>Veremos varios textos:</p>
+<p><code>Este script instalará Boot9. Continuar?</code></p>
+<p>Pulsaremos la A para continuar.</p>
+<p>Veremos otro mensaje. Pulsaremos A también.</p>
+<p>Tras ello, veremos una pantalla roja junto con texto y una combinación de flechas. Debemos pulsar esa combinación.</p>
+<p>No intentes copiar la de la imagen, porque siempre será una distinta.</p>
+<p><img alt="La alerta final." src="../images/starter1_godmode3.png" /></p>
+<p>Cuando acabe, mostrará un mensaje diciendo:</p>
+<p><code>Consola hackeada. #TeAmoKelonio</code></p>
+<p>Cuando se muestre, pulsaremos A.</p>
+<p>Si nos pregunta cualquier cosa sobre la Fecha/Hora, pulsaremos B para ignorarlo.</p>
+<p>¡Ahora, GodMode9 estará traducido al español! ^_^.</p>
+<p>Repetiremos el proceso anterior. Pulsaremos en HOME. Iremos a Scripts y ejecutaremos el Paso 2.</p>
+<p>Nos volverá a saltar otro diálogo. Pulsaremos la A y colocaremos la secuencia de flechas de la pantalla siguiente.</p>
+<p>Cuando acabe, mostrará un mensaje diciendo:</p>
+<p><code>Actualizacion finalizada! #TeAmoKelonio</code></p>
+<p>Pulsaremos la A.</p>
+<p>Una vez hecho eso, se abrirá el menú de Luma.</p>
+<p><img alt="Menú de Luma." src="../images/starter1_luma1.png" /></p>
+<p>Con las flechas iremos hasta donde dice Splash y pulsaremos una sola vez el botón A.</p>
+<p>Cuando lo hagamos, pulsaremos START.</p>
+<p>Se mostrará el splash de seguridad. Será muy útil, por si algún día tienes errores graves:</p>
+<p><img alt="Splash de seguridad" src="../images/securesplash.jpg" />
+Para crear un splash personalizado, puedes visitar <a href="../customsplash/">esta página de la guía</a>.</p>
+<p>Verás que hay un programa nuevo, llamado FBI.</p>
+<p>Sin hacer nada más, apagaremos la consola, sacaremos la tarjeta y la meteremos en el ordenador.</p>
+<h2 id="7-arreglando-la-sd">7. Arreglando la SD</h2>
+<p>Abriremos mset9.bat y escogeremos nuestro modelo de consola.</p>
+<p>En las 4 nuevas opciones escogeremos la 3. Cuando termine, pulsaremos enter. Ahora vamos a borrar un par de archivos que no nos harán falta nunca más.</p>
+<p>Borraremos la carpeta <code>boot9stap</code> y los archivos <code>b9</code>, <code>mset9.bat</code>, <code>mset9.py</code> y <code>SafeB9S.bin</code>.</p>
+<p><img alt="Archivos a borrar." src="../images/starter1_deletefiles.png" /></p>
+<p>Por último, borraremos la carpeta Nintendo 3DS de la tarjeta y colocaremos la original que copiamos al principio del tutorial para recuperar todo.</p>
+<h2 id="8-copiando-la-nand">8. Copiando la NAND.</h2>
+<p>Con la tarjeta dentro, encenderemos la consola. Abriremos el programa FBI e iremos a la opción Copia de seguridad de NAND.</p>
+<p><img alt="La pregunta de la NAND." src="../images/starter1_dumpnand.png" /></p>
+<p>El proceso le llevará unos 6-7 minutos.</p>
+<p>Cuando termine, pulsaremos A.</p>
+<p><img alt="Nand dumpeada." src="../images/starter1_nanddumped.png" /></p>
+<p>Lo que acabamos de hacer es copiar toda la memoria de la consola a la tarjeta SD.</p>
+<p>Sacaremos la tarjeta y la pondremos en el PC.</p>
+<p>Iremos a la carpeta <code>fbi</code> y luego a <code>nand</code>. Ahí encontraremos un archivo que comenzará por <code>NAND_</code>.</p>
+<p><strong>Este archivo contiene toda la memoria de la consola por si algún día ocurriera un error fatal. Es muy importante que guardemos esta copia en algún lugar seguro del ordenador.</strong></p>
+<h2 id="9-disfruta">9. Disfruta</h2>
+<p>Después de hacer eso último, te felicito, porque ¡<strong>tu 3DS ya está hackeada</strong>!</p>
+<p>Aquí tienes una lista de cosas que hacer después:</p>
+<ul>
+<li><a href="../hshop/">Instalar la tienda de juegos (hShop)</a></li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
