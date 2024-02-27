@@ -48,3 +48,4 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: site # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
+          token: ${{ secrets.MI_TOKEN_DEPLOY }}
