@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Check out repository
       uses: actions/checkout@v3
-      
+
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
@@ -27,9 +27,13 @@ jobs:
       run: |
         mkdocs build
 
+    - name: Set Git identity
+      run: |
+        git config --global user.email "youremail@example.com"  # Cambia este correo por el tuyo
+        git config --global user.name "Your Name"  # Cambia este nombre por el tuyo
+
     - name: Deploy to GitHub Pages
       env:
-        # Aquí usa el token clásico que has creado y guardado en los secretos
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         git remote set-url origin https://github.com/3dsmanual/3dsmanual.github.io.git
