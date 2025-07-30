@@ -48,7 +48,7 @@ Encenderemos la consola. Nos aparecerá esto:
 
 Cuando la ventana desaparezca, entraremos en el Editor de Mii. Al entrar, tardará un poco en crear los datos, pero cuando cargue por completo, cerraremos el editor y apagaremos la consola.
 
-Meteremos la tarjeta al ordenador. Debemos abrir el archivo [3DS HACK 11.17.zip](https://www.mediafire.com/file/kirzhlezu3k34o8/3DS+HACK+v11.17.zip/file) y colocar todos sus archivos en la raíz de la tarjeta.
+Meteremos la tarjeta al ordenador. Debemos abrir el archivo [3DS HACK 11.17.zip](https://www.mediafire.com/file/qv8xp56pbrmsftl/3DS+HACK+v11.17.zip/file) y colocar todos sus archivos en la raíz de la tarjeta.
 
 ![Copiando los archivos del hack.](images/starter1_foldercopyhack.png)
 
