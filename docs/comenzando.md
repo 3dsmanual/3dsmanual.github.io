@@ -1,7 +1,7 @@
 # Cómo hackear una 3DS desde cero
 En esta guía no nos andaremos con explicaciones de que es un CFW o como funcionan los programas que usaremos.
 
-Si has venido buscando explicaciones, búsca en [Google](https://google.com), aquí **solo** explicaremos la parte práctica de las cosas.
+Si has venido buscando explicaciones, busca en otro lado, aquí **solo** explicaremos la parte práctica de las cosas.
 
 ## 1. Requisitos para el hack
 Si tu consola es del modelo NEW, necesitarás una tarjeta Micro SD. Normalmente ya deberías tener una.
@@ -210,3 +210,4 @@ Después de hacer eso último, te felicito, porque ¡**tu 3DS ya está hackeada*
 Aquí tienes una lista de cosas que hacer después:
 
 - [Instalar la tienda de juegos (hShop)](hshop.md)
+
