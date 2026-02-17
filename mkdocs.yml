@@ -8,6 +8,7 @@ nav:
     - Hackear la consola desde cero: comenzando.md
     - Instalando Homebrew Menu: homebrew.md
   - Herramientas:
+    - Instalar juegos mucho más rapido (custom-install): custominstall.md
     - Instalar hShop: hshop.md
     - Splash personalizado: customsplash.md
     - Temas customizados: customthemes.md

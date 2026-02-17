@@ -1,7 +1,7 @@
 # Cómo hackear una 3DS desde cero
 En esta guía no nos andaremos con explicaciones de que es un CFW o como funcionan los programas que usaremos.
 
-Si has venido buscando explicaciones, busca en otro lado, aquí **solo** explicaremos la parte práctica de las cosas.
+Si has venido buscando explicaciones técnicas, busca en otro lado, aquí **solo** explicaremos la parte práctica de las cosas.
 
 ## 1. Requisitos para el hack
 Si tu consola es del modelo NEW, necesitarás una tarjeta Micro SD. Normalmente ya deberías tener una.
@@ -24,7 +24,7 @@ Lo primero que debemos hacer es meter nuestra tarjeta de memoria al ordenador.
 
 Allí veremos una carpeta llamada Nintendo 3DS. Copiaremos la carpeta a algún lugar temporal, como el escritorio, ya que después la volveremos a poner en la tarjeta.
 
-![La carpeta que hay que copiar.](images/starter1_folder3DS.png)
+![La carpeta que hay que copiar.](images/starter1_folder3DS.jpg)
 
 Despues de copiar dicha carpeta, debemos borrarla de la tarjeta. Tranquilo, en el caso de tener juegos o archivos de guardado, no se borrarán, ya que más tarde recuperaremos la carpeta de nuestro escritorio.
 
@@ -34,7 +34,7 @@ Para poder ejecutar parte de los programas del tutorial necesitarás instalar **
 
 Si no lo tienes instalado, puedes pulsar [aquí](https://www.python.org/downloads/) para ir a la web de descarga.
 
-![La web de descarga.](images/starter1_pythonweb.png)
+![La web de descarga.](images/starter1_pythonweb.jpg)
 
 Simplemente pulsa en descargar y abre el instalador. Cuando termine, puedes proseguir.
 
@@ -44,31 +44,31 @@ Sacaremos la tarjeta del ordenador (sin la carpeta de Nintendo 3DS) y la meterem
 
 Encenderemos la consola. Nos aparecerá esto:
 
-![Datos del menú.](images/starter1_infohome.png)
+![Datos del menú.](images/starter1_infohome.jpg)
 
 Cuando la ventana desaparezca, entraremos en el Editor de Mii. Al entrar, tardará un poco en crear los datos, pero cuando cargue por completo, cerraremos el editor y apagaremos la consola.
 
 Meteremos la tarjeta al ordenador. Debemos abrir el archivo [3DS HACK 11.17.zip](https://www.mediafire.com/file/qv8xp56pbrmsftl/3DS+HACK+v11.17.zip/file) y colocar todos sus archivos en la raíz de la tarjeta.
 
-![Copiando los archivos del hack.](images/starter1_foldercopyhack.png)
+![Copiando los archivos del hack.](images/starter1_foldercopyhack.jpg)
 
 Cuando lo hayamos hecho, debemos ejecutar el archivo mset9.bat **dentro de la tarjeta SD**. Si lo hacemos fuera de la tarjeta no funcionará.
 
 Al abrirlo, nos aparecerá la siguiente ventana:
 
-![La ventana emergente.](images/starter1_cmd1_1.png)
+![La ventana emergente.](images/starter1_cmd1_1.jpg)
 
 Debemos escoger una opción entre la 1 y la dos. La 3 y la 4 son para versiones anteriores y, por lo tanto, no deben de ser utilizadas.
 
 Pulsamos en la tecla del número correspondiente y luego pulsamos enter.
 
-![Pulsa 1.](images/starter1_cmd1_2.png)
+![Pulsa 1.](images/starter1_cmd1_2.jpg)
 
 Nos aparecerán 4 opciones nuevas. Pulsamos el 1 y luego enter.
 
 Nos dará un error, pero es normal. Pulsaremos enter para cerrar la ventana.
 
-![El error normal.](images/starter1_cmd1_3.png)
+![El error normal.](images/starter1_cmd1_3.jpg)
 
 Sacaremos la tarjeta del ordenador y la pondremos en la consola. Ahora, la encenderemos.
 
@@ -80,7 +80,7 @@ Una vez dentro, pulsaremos en Gestión de datos > Nintendo 3DS > Programas.
 
 Nos avisará de que hay datos corruptos, y pulsaremos en borrar, para así arreglar el error de antes.
 
-![El error de datos corruptos.](images/starter1_corrupteddata.png)
+![El error de datos corruptos.](images/starter1_corrupteddata.jpg)
 
 Cuando termine de borrar, podemos salir de la configuración y apagar la consola.
 
@@ -90,7 +90,7 @@ Abriremos mset9.bat. Seleccionaremos el modelo de la consola entre 1 y 2.
 
 Entre las 4 nuevas opciones escogeremos la 1 de nuevo. No debería de darnos ningún error, como en esta imagen:
 
-![El error solucionado.](images/starter1_cmd2_1.png)
+![El error solucionado.](images/starter1_cmd2_1.jpg)
 
 Pulsaremos enter para cerrar la ventana y sacaremos la tarjeta del ordenador. La volveremos a meter en la 3DS.
 
@@ -110,11 +110,11 @@ Sacaremos la tarjeta y la pondremos de nuevo en la consola.
 
 Aparecerá que está cargando y, tras unos segundos, se verá GodMode9. Esto nos permitirá instalar el hack en la 3DS.
 
-![GodMode9.](images/starter1_godmode1.png)
+![GodMode9.](images/starter1_godmode1.jpg)
 
 Pulsaremos el botón HOME y aparecerá este menú:
 
-![GodMode9 en HOME.](images/starter1_godmode2.png)
+![GodMode9 en HOME.](images/starter1_godmode2.jpg)
 
 Le daremos a More > Scripts...
 
@@ -132,7 +132,7 @@ Tras ello, veremos una pantalla roja junto con texto y una combinación de flech
 
 No intentes copiar la de la imagen, porque siempre será una distinta.
 
-![La alerta final.](images/starter1_godmode3.png)
+![La alerta final.](images/starter1_godmode3.jpg)
 
 Cuando acabe, mostrará un mensaje diciendo:
 
@@ -156,7 +156,7 @@ Pulsaremos la A.
 
 Una vez hecho eso, se abrirá el menú de Luma.
 
-![Menú de Luma.](images/starter1_luma1.png)
+![Menú de Luma.](images/starter1_luma1.jpg)
 
 Con las flechas iremos hasta donde dice Splash y pulsaremos una sola vez el botón A.
 
@@ -164,7 +164,8 @@ Cuando lo hagamos, pulsaremos START.
 
 Se mostrará el splash de seguridad. Será muy útil, por si algún día tienes errores graves:
 
-![Splash de seguridad](images/securesplash.jpg)
+![Splash de seguridad](images/securesplash.png)
+
 Para crear un splash personalizado, puedes visitar [esta página de la guía](customsplash.md).
 
 Verás que hay un programa nuevo, llamado FBI.
@@ -187,13 +188,13 @@ Por último, borraremos la carpeta Nintendo 3DS de la tarjeta y colocaremos la o
 
 Con la tarjeta dentro, encenderemos la consola. Abriremos el programa FBI e iremos a la opción Copia de seguridad de NAND.
 
-![La pregunta de la NAND.](images/starter1_dumpnand.png)
+![La pregunta de la NAND.](images/starter1_dumpnand.jpg)
 
 El proceso le llevará unos 6-7 minutos.
 
 Cuando termine, pulsaremos A.
 
-![Nand dumpeada.](images/starter1_nanddumped.png)
+![Nand dumpeada.](images/starter1_nanddumped.jpg)
 
 Lo que acabamos de hacer es copiar toda la memoria de la consola a la tarjeta SD.
 

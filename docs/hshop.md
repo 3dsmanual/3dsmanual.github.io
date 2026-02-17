@@ -5,7 +5,7 @@ hShop es un programa que nos permitirá descargar todos los juegos, DLCs y actua
 
 Además, también nos permitirá instalar juegos DSiWare, que fueron una familia de juegos que solo salió para consolas DSi; y juegos de la virtual console, que eran juegos de consolas NES, GameBoy Advance, GameBoy y GameGear.
 
-Si tienes una **New** Nintendo 3DS podrás jugar a juegos de la Super Nitendo, ya que estos son específicos de esa consola, debido a la CPU mejorada de la nueva consola.
+Si tienes una **New** Nintendo 3DS podrás jugar a juegos de la Super Nintendo, ya que estos son específicos de esa consola, debido a la CPU mejorada de la nueva consola (que conste que aún así puedes jugar a juegos de SNES en cualquier otro modelo usando snes9x)
 
 ## Instalando hShop
 
@@ -21,13 +21,17 @@ Cuando la cámara se active, enfoca el siguiente código QR:
 
 Deberíamos ver esta pantalla:
 
-![Confirmación de instalación](images/hshop_1.png)
+![Confirmación de instalación](images/hshop_1.jpg)
 
 Pulsa A para instalar. Cuando el proceso termine, ve hasta el menú principal de FBI y pulsa START para cerrarlo.
 
 Espera unos segundos y aparecerá en el menú HOME un regalo.
 
 Desenvuelvelo y aparecerá 3hs (hShop).
+
+## Entrar a hShop desde el navegador
+
+También es posible entrar a hShop desde un navegador convencional para descargar archivos `.cia` si así lo quisieras. Tan solo entra a [hshop.erista.me](https://hshop.erista.me), busca lo que quieras y descárgalo.
 
 ## Explicación de hShop
 
